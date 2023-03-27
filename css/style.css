@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Crimson+Text&family=Secular+One&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #00ffff5b;
+    display: flex;
+}
+
+.main .container {
+    gap: 15px;
+    display: grid;
+    background-color: #ffffff;
+    padding: 40px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 500px;
+}
+
+#title {
+    font-size: 45px;
+}
+
+.main #img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    transition: all 1s ease;
+}
+
+.main .container .item {
+    display: grid;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.main .container .item .itemList {
+    text-align: center;
+    margin: 10px auto;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+#progress {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    height: 40%;
+    background: #00ffff5b;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#prev,
+#next {
+    font-size: 20px;
+    color: #000000;
+    background: #00ffff5b;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+p {
+    margin-top: -20px;
+}
+
+#playPause {
+    font-size: 25px;
+    background: #00ffff5b;
+    padding: 25px 30px;
+    border-radius: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#playPause:hover,
+#prev:hover,
+#next:hover {
+    background: #00ffff80;
+    color: #242323;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #000000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 6px solid #000000;
+}
+
+@media (max-width:520px) {
+    .main {
+        background-color: #00FFFF;
+
+    }
+
+    .main .container {
+        min-height: 100vh;
+    }
+
+    .main #img {
+        width: 300px;
+        height: 290px;
+
+    }
+}
